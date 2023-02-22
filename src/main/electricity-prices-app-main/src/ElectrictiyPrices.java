@@ -36,10 +36,10 @@ public class ElectricityPricesApp {
 
     private static void ManageMenu(String input) {
         switch (input) {
-            case "E", "e" -> Terminate and Exit program();
-            case "1" -> Insert prices();
-            case "2" -> Show Stat();
-            case "3" -> Sort increasing order();
+            case "E", "e" ->  Exit();
+            case "1" -> Insertprices();
+            case "2" -> ShowStat();
+            case "3" -> Sortincreasing order();
             case "4" -> BestTimetoCharge();
             default -> ManageMenu();
         }
@@ -53,7 +53,7 @@ public class ElectricityPricesApp {
 
         for (int i = 0; i < 24; i++) {
 
-            String timeInterval = PricePoint.formatTimeInterval(i, 1);
+            String timeInterval = Prices.formatTimeInterval(i, 1);
             System.out.printf("%s : ", timeInterval);
             String userInput = getUserInput();
             boolean inputIsValid = validateDataInput(userInput);
@@ -68,10 +68,10 @@ public class ElectricityPricesApp {
                 i--;
             }
         }
-        System.out.printf("%n"+"Klart! Datan är nu sparad."+"%n");
+
     }
 
-    private static boolean validateDataInput(String input) {
+    private static boolean validatePriceFormat(String input) {
 
         Pattern regexp = Pattern.compile("^\\d{1,4}$");
         return regexp.matcher(input).find();
@@ -92,7 +92,7 @@ public class ElectricityPricesApp {
             System.out.printf("Högsta pris: \n\t%s\n\t%.2f SEK/kWh\n", max.timeInterval(), ( max.price() / 100.0 ) );
 
             System.out.println();
-            createChart(dataStore); // "x"-markerat där priset överstiger eller är lika med värdet som visas på y-axeln
+            createChart(dataStore);
             System.out.print("\n\n");
         }
     }
@@ -142,7 +142,7 @@ public class ElectricityPricesApp {
         }
     }
 
-    private static void quitApp() {
+    private static void Exit() {
         appIsActive = false;
     }
 
