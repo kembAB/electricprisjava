@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 
 public class ElectricityPricesApp {
 
-    private static boolean appIsActive = true;
+    private static boolean isrunning = true;
     private static final Scanner scanner = new Scanner(System.in);
     private static PricePoint[] dataStore;
 
@@ -19,18 +19,18 @@ public class ElectricityPricesApp {
 
     private static void printMainMenu() {
         System.out.println();
-        System.out.println("Elpriser");
-        System.out.println("=".repeat(8));
-        System.out.println("1. Inmatning");
-        System.out.println("2. Min, Max och Medel");
-        System.out.println("3. Sortera");
-        System.out.println("4. Bästa Laddningstid (4h)");
-        System.out.println("e. Avsluta");
+        System.out.println("Electricity prices");
+
+        System.out.println("1. Insert price");
+        System.out.println("2. Min, Max och Average");
+        System.out.println("3. Sort Increasing order");
+        System.out.println("4. Best car chargin interval(4h)");
+        System.out.println("e. Exit program");
         System.out.println();
-        System.out.print("Ditt val: ");
+        System.out.print("what would you like to choose?: ");
     }
 
-    private static String getUserInput() {
+    private static String getPrices() {
         return scanner.nextLine();
     }
 
