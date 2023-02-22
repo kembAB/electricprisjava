@@ -47,9 +47,9 @@ public class ElectricityPricesApp {
 
     private static void Insertprices() {
 
-        System.out.println("\nSkriv in pris per kWh för det tidsintervall som anges och tryck sedan på \"Enter\". Ange samtliga priser i ören.\n");
+        System.out.println("\n please insert price in all ifntervals of the day .\n");
 
-        dataStore = new PricePoint[24];
+        price = new Prices[24];
 
         for (int i = 0; i < 24; i++) {
 
