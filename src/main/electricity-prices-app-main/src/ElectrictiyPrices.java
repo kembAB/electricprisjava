@@ -47,7 +47,7 @@ public class ElectricityPricesApp {
 
     private static void Insertprices() {
 
-        System.out.println("\n please insert price in all ifntervals of the day .\n");
+        System.out.println("\n please insert price in all intervals of the day .\n");
 
         price = new Prices[24];
 
