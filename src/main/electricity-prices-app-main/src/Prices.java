@@ -1,4 +1,4 @@
-public record PricePoint(String timeInterval, int price) implements Comparable<PricePoint> {
+public record Prices(String timeInterval, int price) implements Comparable<PricePoint> {
 
     public static String formatTimeInterval(int lowerBound, int length) {
 //        return String.format("%02d:00-%02d:00", lowerBound, (lowerBound < 23) ? (lowerBound + 1) : 0);
