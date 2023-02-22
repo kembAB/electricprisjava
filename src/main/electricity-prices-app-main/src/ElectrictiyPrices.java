@@ -6,14 +6,14 @@ public class ElectricityPricesApp {
 
     private static boolean isrunning = true;
     private static final Scanner scanner = new Scanner(System.in);
-    private static PricePoint[] dataStore;
+    private static Prices[] price;
 
     public static void main(String[] args) {
 
         while (appIsActive) {
 
-            printMainMenu();
-            handleMainMenuChoice(getUserInput());
+            DisplayMenu();
+            ManageMenu(getPrices());
         }
     }
 
@@ -34,18 +34,18 @@ public class ElectricityPricesApp {
         return scanner.nextLine();
     }
 
-    private static void handleMainMenuChoice(String input) {
+    private static void ManageMenu(String input) {
         switch (input) {
-            case "E", "e" -> quitApp();
-            case "1" -> collectData();
-            case "2" -> printStatistics();
-            case "3" -> printSortedByLowest();
-            case "4" -> printOptimalTimeToCharge();
-            default -> handleIllegalInputValue();
+            case "E", "e" -> Terminate and Exit program();
+            case "1" -> Insert prices();
+            case "2" -> Show Stat();
+            case "3" -> Sort increasing order();
+            case "4" -> BestTimetoCharge();
+            default -> ManageMenu();
         }
     }
 
-    private static void collectData() {
+    private static void Insertprices() {
 
         System.out.println("\nSkriv in pris per kWh för det tidsintervall som anges och tryck sedan på \"Enter\". Ange samtliga priser i ören.\n");
 
