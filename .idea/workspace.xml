@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16584a55-57ce-4013-b194-d16ac05df8e0" name="Changes" comment="commit three">
-      <change beforePath="$PROJECT_DIR$/src/main/electricity-prices-app-main/src/ElectrictiyPrices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/electricity-prices-app-main/src/ElectrictiyPrices.java" afterDir="false" />
-    </list>
+    <list default="true" id="16584a55-57ce-4013-b194-d16ac05df8e0" name="Changes" comment="Merge remote-tracking branch 'github/master'" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +19,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -116,6 +113,7 @@
       <workItem from="1677083454295" duration="25000" />
       <workItem from="1677083695796" duration="7595000" />
       <workItem from="1677257856785" duration="778000" />
+      <workItem from="1677269783629" duration="351000" />
     </task>
     <task id="LOCAL−00001" summary="&#10;secong commit">
       <created>1677084081588</created>
@@ -153,7 +151,25 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1677099894660</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary=" tytyt">
+      <created>1677269898387</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1677269898387</updated>
+    </task>
+    <task id="LOCAL−00008" summary=" tytyt">
+      <created>1677270013313</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1677270013313</updated>
+    </task>
+    <task id="LOCAL−00009" summary="Merge remote-tracking branch 'github/master'">
+      <created>1677270099467</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1677270099467</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +192,10 @@
     <MESSAGE value="foruth commit" />
     <MESSAGE value="foruth commit 2" />
     <MESSAGE value="commit three" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit three" />
+    <MESSAGE value="commmit three four" />
+    <MESSAGE value=" tytyt" />
+    <MESSAGE value=" tytyt12" />
+    <MESSAGE value="Merge remote-tracking branch 'github/master'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'github/master'" />
   </component>
 </project>

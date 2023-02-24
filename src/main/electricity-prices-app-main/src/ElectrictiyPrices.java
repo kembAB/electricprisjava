@@ -61,7 +61,7 @@ public class ElectricityPricesApp {
             if (inputIsValid) dataStore[i] = new PricePoint(timeInterval, Integer.parseInt(userInput));
             else {
                 System.out.println();
-                handleIllegalInputValue();
+                HandleException();
                 try {
                     Thread.sleep(50);
                 } catch (Exception ignored) {}
