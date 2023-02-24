@@ -39,14 +39,14 @@ public class ElectricityPricesApp {
             case "E", "e" ->  Exit();
             case "1" -> Insertprices();
             case "2" -> ShowStat();
-            case "3" -> Sortincreasing order();
+            case "3" -> Sortincreasingorder();
             case "4" -> BestTimetoCharge();
             default -> ManageMenu();
         }
     }
 
     private static void Insertprices() {
-     //comment 1
+     //comment 12
         System.out.println("\n please insert price in all intervals of the day .\n");
 
         price = new Prices[24];
